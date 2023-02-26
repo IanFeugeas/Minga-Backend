@@ -1,19 +1,11 @@
 import express from "express";
-
-import path from "path";
-
 import "./config/database.js";
-
+import path from "path";
 import "dotenv/config.js";
-
 import cookieParser from "cookie-parser";
-
 import logger from "morgan";
-
 import indexRouter from "./routes/index.js";
-
 import usersRouter from "./routes/users.js";
-
 import { __dirname } from "./utils.js";
 
 let app = express();
